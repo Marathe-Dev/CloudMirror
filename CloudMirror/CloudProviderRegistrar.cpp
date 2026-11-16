@@ -39,7 +39,7 @@ void CloudProviderRegistrar::RegisterWithShell()
         info.DisplayNameResource(L"CloudMirror");
 
         // This icon is just for the sample. You should provide your own branded icon here
-        info.IconResourceChange03(L"%SystemRoot%\\system32\\charmap.exe,0");
+        info.IconResourceChange04(L"%SystemRoot%\\system32\\charmap.exe,0");
         info.HydrationPolicy(winrt::StorageProviderHydrationPolicy::Full);
         info.HydrationPolicyModifier(winrt::StorageProviderHydrationPolicyModifier::None);
         info.PopulationPolicy(winrt::StorageProviderPopulationPolicy::AlwaysFull);
