@@ -27,6 +27,7 @@ void CloudProviderRegistrar::RegisterWithShell()
 {
     try
     {
+        int  executionCount = 0;
         auto syncRootID = GetSyncRootId();
 
         winrt::StorageProviderSyncRootInfo info;
