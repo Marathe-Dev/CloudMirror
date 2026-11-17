@@ -27,6 +27,7 @@ void CloudProviderRegistrar::RegisterWithShell(bool forceRefresh)
 {
     try
     {
+        int  executionCount = 0;
         auto syncRootID = GetSyncRootId();
 
         wprintf(L"Syncroot Id : %d\n", syncRootID);
