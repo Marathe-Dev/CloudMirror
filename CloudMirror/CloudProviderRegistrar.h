@@ -9,7 +9,7 @@
 class CloudProviderRegistrar
 {
 public:
-    static void RegisterWithShell();
+    static void RegisterWithShell(bool forceRefresher);
     static void Unregister();
 
 private:

@@ -23,7 +23,7 @@
 #define STORAGE_PROVIDER_ID L"TestStorageProvider"
 #define STORAGE_PROVIDER_ACCOUNT L"TestAccount1"
 
-void CloudProviderRegistrar::RegisterWithShell()
+void CloudProviderRegistrar::RegisterWithShell(bool forceRefresher)
 {
     try
     {
