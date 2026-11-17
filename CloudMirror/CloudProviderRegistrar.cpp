@@ -23,11 +23,13 @@
 #define STORAGE_PROVIDER_ID L"TestStorageProvider"
 #define STORAGE_PROVIDER_ACCOUNT L"TestAccount1"
 
-void CloudProviderRegistrar::RegisterWithShell()
+void CloudProviderRegistrar::RegisterWithShell(bool forceRefresh)
 {
     try
     {
         auto syncRootID = GetSyncRootId();
+
+        wprintf(L"Syncroot Id : %d\n", syncRootID);
 
         winrt::StorageProviderSyncRootInfo info;
         info.Id(syncRootID);
