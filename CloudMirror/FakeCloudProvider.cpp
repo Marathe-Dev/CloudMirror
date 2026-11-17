@@ -56,7 +56,7 @@ bool FakeCloudProvider::Start(_In_opt_ LPCWSTR serverFolder, _In_opt_ LPCWSTR cl
         // Start up the task that registers and hosts the services for the shell (such as custom states, menus, etc)
         ShellServices::InitAndStartServiceTask();
         // Register the provider with the shell so that the Sync Root shows up in File Explorer
-        CloudProviderRegistrar::RegisterWithShell();
+        CloudProviderRegistrar::RegisterWithShellRefresher);
         // Hook up callback methods (in this class) for transferring files between client and server
         ConnectSyncRootTransferCallbacks();
         // Create the placeholders in the client folder so the user sees something
