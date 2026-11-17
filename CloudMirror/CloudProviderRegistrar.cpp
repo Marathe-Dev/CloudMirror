@@ -29,6 +29,8 @@ void CloudProviderRegistrar::RegisterWithShell(bool forceRefresh)
     {
         auto syncRootID = GetSyncRootId();
 
+        wprintf(L"Syncroot Id : %d\n", syncRootID);
+
         winrt::StorageProviderSyncRootInfo info;
         info.Id(syncRootID);
 
